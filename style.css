@@ -1,0 +1,128 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #E4DCCF;
+}
+.todo-list {
+    margin-top: 5%;
+    width: 600px;
+    /* border: 2px solid red; */
+    padding: 10px;
+
+}
+.add-section {
+    /* border: 2px solid blue; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.add-btn {
+    text-decoration: none;
+    border-radius: 5px;
+    width: 50px;
+    padding: 10px;
+    border: none;
+    height: 50px;
+    background-color: #7D9D9C;
+    color: white;
+    /* font-weight: bold; */
+    cursor: pointer;
+}
+.add-text {
+    width: 85%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.add-text:focus {
+    outline: none;
+}
+.add-btn:hover/*, .clear:hover*/ {
+    background-color: #576F72; ;
+}
+.tasks-section {
+    /* height: 400px; */
+    padding: 10px;
+}
+.tasks-section:focus {
+    border: none;
+    /* remove border */
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* border: 2px solid green; */
+    border-radius: 5px;
+    /* font-weight: bold; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: white;
+
+}
+.task-del {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    background-color: #eea374;
+    color: white;
+
+
+}
+.task-del:hover {
+    background-color: #DF7861;
+    color: white;
+}
+.btns {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* border: 2px solid green; */
+    border-radius: 5px;
+    /* font-weight: bold; */
+}
+.clear-all-btn, .clear-all-checked-btn {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    background-color: #7D9D9C;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+}
+.clear-all-btn:hover, .clear-all-checked-btn:hover {
+    background-color: #576F72;
+}
+.gray-box {
+    padding: 20px;
+    border-radius: 10px;
+    background-color:rgb(255 255 255 / 43%);
+    margin-bottom: 10px;
+}
+.check:checked + label{
+    text-decoration:line-through;
+}
+input.check {
+    transform: scale(2);
+    margin-right: 20px;
+    accent-color: #3F4E4F;
+
+}
